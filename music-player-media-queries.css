@@ -1,0 +1,62 @@
+/*CSS file for media queries for index.html*/
+
+/*@media screen and (max-width:1199px)
+{
+
+}*/
+
+/*@media screen and (max-width:991px)
+{
+	
+}*/
+
+@media screen and (max-width:767px)
+{
+	/*	mobile-playlist visible*/
+	.mobile-playlist
+	{
+		display: block;
+	}
+
+	.artist 
+	{
+		width: calc(100% / 3 - 18px);
+	}
+
+	.station
+	{
+		width: calc(100% / 4 - 10px);
+	}
+
+	.single
+	{
+		width: calc(100% / 3 - 8px);
+	}
+	.genre
+	{
+		height: 22vw;
+	}
+	.wide-playlist .queue-item>.info>img
+	{
+		width: 12%;
+	}
+
+	/*	dropdown menu latest release*/
+	.dropdown-content a
+	{
+		font-size: 0.45rem;
+	}
+	.dropdown-content i
+	{
+		font-size: 0.7rem;
+	}
+
+}
+
+@media screen and (max-width:480px)
+{
+	.latest-release .description
+	{
+		font-size: 0.8rem;
+	}
+}

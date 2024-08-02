@@ -1,0 +1,40 @@
+/*CSS media queries for single-artist.html*/
+
+
+/*@media screen and (max-width:1199px)
+{
+
+}*/
+
+/*@media screen and (max-width:991px)
+{
+	
+}*/
+
+@media screen and (max-width:767px)
+{
+	.wide-playlist .queue-item>.info>img
+	{
+		width: 18%;
+	}
+	.queue-item i, .sequence-no
+	{
+		font-size: 1.2rem;
+	}
+	.item-title
+	{
+		font-size: 1.3rem;
+	}
+	.item-desc
+	{
+		font-size: 1.1rem;
+	}
+
+
+}
+
+/*@media screen and (max-width:480px)
+{
+
+}*/
+

@@ -1,0 +1,135 @@
+/*Common media queries for index.html and single-artist.html*/
+
+@media screen and (max-width:1199px)
+{
+	html
+	{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width:991px)
+{
+	html
+	{
+		font-size: 15px;
+	}
+}
+
+
+@media screen and (max-width:767px)
+{
+	html
+	{
+		font-size: 14px;
+	}
+	
+
+/*	nav bar styling for mobile phones*/
+	.nav-bar
+	{
+		height: 15vw;
+	}
+	.nav-bar>p
+	{
+		display: none;
+	}
+	.songs-playlist
+	{
+		display: none;
+	}
+	#logo
+	{
+		width: 30%;
+	}
+	.search-bar
+	{
+		width: 42%;
+	}
+	#profile-pic
+	{
+		width: 10%;
+	}
+	.search-bar>i 
+	{
+		font-size: 1.3rem;
+	}
+	.search-bar>input[type="text"]::placeholder
+	{
+		font-size: 1.2rem;
+	}
+
+/*	expanding midde part*/
+	.main
+	{
+		width: 90vw;
+	}
+
+	.songs-content
+	{
+		width: 100%;
+	}
+
+
+
+/*	bottom music player styling*/
+/*	different style for mobile*/
+	.music-player
+	{
+		height: 10rem;
+	}
+	.main-controls
+	{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 6px;
+	}
+
+/*	volume button is removed for mobile*/
+/*	can change  volume throught mobile button*/
+	.left-controls
+	{
+		display: none;
+	}
+	.right-controls
+	{
+		display: none;
+	}
+
+/*	.mob-song-icon*/
+/*	{*/
+/*		display: block;*/
+/*		position: absolute;*/
+/*		top: 0;*/
+/*	}*/
+	.mob-song-title
+	{
+		display: block;
+	}
+	.play-pause
+	{
+		order: 1;
+		font-size: 1.9rem;
+	}
+	#pause 
+	{
+		font-size: 3.8rem;
+	}
+	.slider-body>span
+	{
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+}
+
+@media screen and (max-width:480px)
+{
+	html
+	{
+		font-size: 10px;
+	}
+}

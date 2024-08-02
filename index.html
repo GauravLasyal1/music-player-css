@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<!-- <link rel="stylesheet" href="styles.css" /> -->
+	<script src="https://kit.fontawesome.com/343744c3ae.js" crossorigin="anonymous"></script>
+
+	<!-- music-player-style.css added instead of styles.css -->
+	<link rel="stylesheet" type="text/css" href="music-player-style.css">
+	<link rel="stylesheet" type="text/css" href="common-media-queries.css">
+	<link rel="stylesheet" type="text/css" href="music-player-media-queries.css">
+	<title>Code Studio Music</title>
+</head>
+<body>
+	<div class="nav-bar">
+		<img src="images/logo.jpeg" id="logo"/>
+		<p>Favourites</p>
+		<div class="search-bar">
+			<i class="fa-solid fa-magnifying-glass"></i>
+			<input type="text" name="search" placeholder="Search" />
+			<i class="fa-solid fa-microphone"></i>
+		</div>
+		<div class="notification-icon"><i class="fa-solid fa-bell"></i></div>
+		<img src="images/profile-pic.jpg" id="profile-pic" />
+	</div>
+
+	<main class="main">
+		<div class="songs-content">
+			
+			<div class="carousel-container">
+				<input type="radio" name="carousel" id="carousel-1" >
+				<input type="radio" name="carousel" id="carousel-2">
+				<input type="radio" name="carousel" id="carousel-3">
+				<input type="radio" name="carousel" id="carousel-4" checked>
+				<input type="radio" name="carousel" id="carousel-5">
+
+				<div class="carousel">
+					<div class="carousel-item" id="item-1">
+						<label for="carousel-5" class="left"></label>
+						<img src="images/crousal-image-1.jpeg" alt="Image 1">
+						<label for="carousel-2" class="right"></label>
+					</div>
+					<div class="carousel-item" id="item-2">
+						<label for="carousel-1" class="left"></label>
+						<img src="images/crousal-image-2.jpg" alt="Image 2">
+						<label for="carousel-3" class="right"></label>
+					</div>
+					<div class="carousel-item" id="item-3">
+						<label for="carousel-2" class="left"></label>
+						<img src="images/crousal-image-3.jpg" alt="Image 3">
+						<label for="carousel-4" class="right"></label>
+					</div>
+					<div class="carousel-item" id="item-4">
+						<label for="carousel-3" class="left"></label>
+						<img src="images/crousal-image-4.jpg" alt="Image 4">
+						<label for="carousel-5" class="right"></label>
+					</div>
+					<div class="carousel-item" id="item-5">
+						<label for="carousel-4" class="left"></label>
+						<img src="images/crousal-image-5.jpg" alt="Image 5">
+						<label for="carousel-1" class="right"></label>
+					</div>
+				</div>
+			</div>
+
+			<!-- below playlist only visible for mobiles -->
+
+			<!-- mobile-playlists element is build after wide-playlist of single-artist.html -->
+			 <div class="mobile-playlist">
+			 	<h4>My Playlist</h4>
+			 	<!-- same below playlist is used in single-artists page -->
+
+			 	<!-- below wide-playlist is took from single-artist.css -->
+			 	<div class="wide-playlist">
+				<div class="playlist-queue playlist-queue_wider">
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+					<div class="queue-item queue-item_wider">
+						<div class="info">
+							<span class="sequence-no">01</span>
+							<img src="images/song1.jpg" />
+							<div class="item-detail">
+								<div class="item-title">Swimming Pools</div>
+								<div class="item-desc">Kendrick Lamar</div>
+							</div>
+						</div>
+						<span class="">
+						<!-- heart icon is removed here -->
+						<i class="fa-regular fa-heart"></i>
+					</span>
+					</div>
+			 </div>
+			</div>
+		</div>
+<!-- above not visible for large screens -->
+
+
+			
+
+			<div class="latest-release">
+				<div class="section-heading">
+					Latest Release
+				</div>
+				<div class="latest-release-body">
+				  <div class="row">
+						<div class="song-item">
+							<div class="about-song">
+								<div class="song-image-container">
+									<img src="images/onism.jpeg" />
+									<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+								</div>
+								<div class="song-details">
+									<span class="song-name">Onism</span>
+									<span class="description">AUG 11, 2017</span>
+								</div>
+							</div>
+							<div class="song-duration">
+								<!-- dropdown menu on clicking ellipse icon -->
+								<!-- structure and classes of playlist dropdown menu are used -->
+								<!-- if want simple icon without dropdown, just put icon under span element below -->
+								<span class="right-span">
+								 <label for="lr-chk-1"><i class="fa-solid fa-ellipsis"></i></label>
+								 <!-- giving unique id for checkbox and dropdown-content will help 
+								 unique checkbox trigger its unique dropdown menu -->
+								 <input type="checkbox" id="lr-chk-1" class="dropdown-checkbox">
+								 <div class="dropdown-content" id="lr-drop-1">
+								 <div class="box-flex">
+									<a href="#"> <i class="fa-solid fa-play"></i> Play Now</a>
+									<a href="#"> <i class="fa-solid fa-plus"></i> Add To Queue</a>
+									<a href="#"> <i class="fa-solid fa-bars"></i> Add To Favourites</a>
+									<a href="#"> <i class="fa-solid fa-circle-info"></i> Get Info</a>
+								 </div>
+								 </div>
+								</span>
+								<span class="time">4:44</span>
+							</div>
+						</div>
+						<div class="song-item">
+							<div class="about-song">
+								<div class="song-image-container">
+									<img src="images/onism.jpeg" />
+									<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+								</div>
+								<div class="song-details">
+									<span class="song-name">Onism</span>
+									<span class="description">AUG 11, 2017</span>
+								</div>
+							</div>
+							<div class="song-duration">
+								<!-- dropdown menu on clicking ellipse icon -->
+								<!-- structure and classes of playlist dropdown menu are used -->
+								<!-- if want simple icon without dropdown, just put icon under span element below -->
+								<span class="right-span">
+								 <label for="lr-chk-2"><i class="fa-solid fa-ellipsis"></i></label>
+								 <!-- giving unique id for checkbox and dropdown-content will help 
+								 unique checkbox trigger its unique dropdown menu -->
+								 <input type="checkbox" id="lr-chk-2" class="dropdown-checkbox">
+								 <div class="dropdown-content" id="lr-drop-2">
+								 <div class="box-flex">
+									<a href="#"> <i class="fa-solid fa-play"></i> Play Now</a>
+									<a href="#"> <i class="fa-solid fa-plus"></i> Add To Queue</a>
+									<a href="#"> <i class="fa-solid fa-bars"></i> Add To Favourites</a>
+									<a href="#"> <i class="fa-solid fa-circle-info"></i> Get Info</a>
+								 </div>
+								 </div>
+								</span>
+								<span class="time">4:44</span>
+							</div>
+						</div>
+				  </div>
+
+					<div class="row">
+						<div class="song-item">
+							<div class="about-song">
+								<div class="song-image-container">
+									<img src="images/onism.jpeg" />
+									<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+								</div>
+								<div class="song-details">
+									<span class="song-name">Onism</span>
+									<span class="description">AUG 11, 2017</span>
+								</div>
+							</div>
+							<div class="song-duration">
+								<!-- dropdown menu on clicking ellipse icon -->
+								<!-- structure and classes of playlist dropdown menu are used -->
+								<!-- if want simple icon without dropdown, just put icon under span element below -->
+								<span class="right-span">
+								 <label for="lr-chk-3"><i class="fa-solid fa-ellipsis"></i></label>
+								 <!-- giving unique id for checkbox and dropdown-content will help 
+								 unique checkbox trigger its unique dropdown menu -->
+								 <input type="checkbox" id="lr-chk-3" class="dropdown-checkbox">
+								 <div class="dropdown-content" id="lr-drop-3">
+								 <div class="box-flex">
+									<a href="#"> <i class="fa-solid fa-play"></i> Play Now</a>
+									<a href="#"> <i class="fa-solid fa-plus"></i> Add To Queue</a>
+									<a href="#"> <i class="fa-solid fa-bars"></i> Add To Favourites</a>
+									<a href="#"> <i class="fa-solid fa-circle-info"></i> Get Info</a>
+								 </div>
+								 </div>
+								</span>
+								<span class="time">4:44</span>
+							</div>
+						</div>
+						<div class="song-item">
+							<div class="about-song">
+								<div class="song-image-container">
+									<img src="images/onism.jpeg" />
+									<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+								</div>
+								<div class="song-details">
+									<span class="song-name">Onism</span>
+									<span class="description">AUG 11, 2017</span>
+								</div>
+							</div>
+							<div class="song-duration">
+								<!-- dropdown menu on clicking ellipse icon -->
+								<!-- structure and classes of playlist dropdown menu are used -->
+								<!-- if want simple icon without dropdown, just put icon under span element below -->
+								<span class="right-span">
+								 <label for="lr-chk-4"><i class="fa-solid fa-ellipsis"></i></label>
+								 <!-- giving unique id for checkbox and dropdown-content will help 
+								 unique checkbox trigger its unique dropdown menu -->
+								 <input type="checkbox" id="lr-chk-4" class="dropdown-checkbox">
+								 <div class="dropdown-content" id="lr-drop-4">
+								 <div class="box-flex">
+									<a href="#"> <i class="fa-solid fa-play"></i> Play Now</a>
+									<a href="#"> <i class="fa-solid fa-plus"></i> Add To Queue</a>
+									<a href="#"> <i class="fa-solid fa-bars"></i> Add To Favourites</a>
+									<a href="#"> <i class="fa-solid fa-circle-info"></i> Get Info</a>
+								 </div>
+								 </div>
+								</span>
+								<span class="time">4:44</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="popular-artist">
+				<div class="section-heading">
+					Popular Artists
+				</div>
+				<div class="popular-artist-body">
+					<div class="artist">
+						<a href="single-artist.html" target="_self">
+						<div class="artist-image-container">
+							<img src="images/ed.jpeg" />
+							<!-- below overlay-play-icon is reused from Latest Release -->
+							<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+						</div>
+					</a>
+						<p>Ed Sheeran</p>
+					</div>
+					<div class="artist">
+						<a href="single-artist.html" target="_self">
+						<div class="artist-image-container">
+							<img src="images/coldplay.jpg" />
+							<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+						</div>
+						</a>
+						<p>Coldplay</p>
+					</div>
+					<div class="artist">
+						<a href="single-artist.html" target="_self">
+						<div class="artist-image-container">
+							<img src="images/zayn.jpeg" />
+							<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+						</div>
+					</a>
+						<p>Zayn</p>
+					</div>
+					<div class="artist">
+						<a href="single-artist.html" target="_self">
+						<div class="artist-image-container">
+							<img src="images/id.jpg" />
+							<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+						</div>
+					</a>
+						<p>Imagine Dragons</p>
+					</div>
+					<div class="artist">
+						<a href="single-artist.html" target="_self">
+						<div class="artist-image-container">
+							<img src="images/puth.jpeg" />
+							<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+						</div>
+					</a>
+						<p>Charlie Puth</p>
+					</div>
+					<div class="artist">
+						<a href="single-artist.html" target="_self">
+						<div class="artist-image-container">
+							<img src="images/bruno.jpg" />
+							<div class="overlay-play-icon"><i class="fa-solid fa-play"></i></div>
+						</div>
+					</a>
+						<p>Bruno Mars</p>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="stations-body">
+				<div class="station">
+					<img src="images/rap.jpg">
+					<span class="overlay-text">HipHop</span>
+				</div>
+				<div class="station">
+					<img src="images/love.jpeg">
+					<span class="overlay-text">Love</span>
+				</div>
+				<div class="station">
+					<img src="images/radio.jpeg">
+					<span class="overlay-text">Retro</span>
+				</div>
+				<div class="station">
+					<img src="images/coffee.jpg">
+					<span class="overlay-text">Chill</span>
+				</div>
+				<div class="station">
+					<img src="images/workout.jpeg">
+					<span class="overlay-text">Workout</span>
+				</div>
+				<div class="station">
+					<img src="images/rock.jpg">
+					<span class="overlay-text">Rock</span>
+				</div>
+				<div class="station">
+					<img src="images/pop.jpeg">
+					<span class="overlay-text">Pop</span>
+				</div>
+			</div>
+
+			<div class="genre-body">
+				<div class="genre party"><span>Party</span></div>
+				<div class="genre electronic"><span>Electronic</span></div>
+				<div class="genre roadtrip"><span>Road Trip</span></div>
+			</div>
+
+			<div class="latest-english">
+				<div class="section-heading">
+					Latest English
+				</div>
+				<div class="latest-english-body">
+					<div class="single">
+						<img src="images/onism-1.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release1.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release2.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release3.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release4.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release5.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Below is latest hindi section uses all properties and structure of above latest english -->
+			<div class="latest-english">
+				<div class="section-heading">
+					Latest Hindi
+				</div>
+				<div class="latest-english-body">
+					<div class="single">
+						<img src="images/release5.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release2.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release4.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/onism-1.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release3.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+					<div class="single">
+						<img src="images/release1.jpg" />
+						<div class="sname">Onism</div>
+						<div class="date">Aug 11,2017</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="songs-playlist">
+			<!-- below structure of playlist-heading can be used another compononents -->
+			<div class="playlist-heading">
+				<span class="left-span">My Playlist</span>
+				<!-- below structure for dropdown menu can be reused for other elements -->
+				<span class="right-span">
+					<label for="dropdown-checkbox" class="dropdown-icon">Queue&nbsp;&nbsp;<i class="fa-solid fa-caret-down"></i></label>
+					<!-- giving unique id for checkbox and dropdown-content will help 
+					unique checkbox trigger its unique dropdown menu -->
+					<input type="checkbox" id="dropdown-checkbox" class="dropdown-checkbox">
+					<div class="dropdown-content" id="playlist-dropdown">
+						<div class="box-flex">
+							<a href="#">Playlists</a>
+							<a href="#">Favourite Songs</a>
+						</div>
+					</div>
+				</span>
+			</div>
+			<!-- if we want simple text/icon , just put it bw span element -->
+			<!-- copy above structure and just change the content -->
+
+			<!-- below playlist-queue template can be reused in single-artist page for wide playlist (just require few modifications like dimensions) -->
+
+			<div class="playlist-queue">
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<span>
+					<i class="fa-regular fa-heart"></i>
+					</span>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+				<div class="queue-item">
+					<div class="info">
+						<span class="sequence-no">01</span>
+						<img src="images/song1.jpg" />
+						<div class="item-detail">
+							<div class="item-title">Swimming Pools</div>
+							<div class="item-desc">Kendrick Lamar</div>
+						</div>
+					</div>
+					<i class="fa-regular fa-heart"></i>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	<div class="music-player">
+		<div class="left-controls">
+			<img src="images/lennon.jpg">
+			<div class="song-info">
+				<div class="song-title">Imagine By John Lennon</div>
+				<div class="singer">John Lennon</div>
+			</div>
+			<div class="fav">
+				<i class="fa-regular fa-heart"></i>
+				<i class="fa-solid fa-ban"></i>	
+			</div>
+		</div>
+
+		<div class="main-controls">
+
+			<!--  visible only for mobile -->
+				<img src="images/lennon.jpg" class="mob-song-icon">
+				<span class="mob-song-title">Imagine-John Lennon</span>
+				<!--   -->
+
+			<div class="play-pause">
+				<i class="fa-solid fa-shuffle"></i>
+				<i class="fa-solid fa-backward-step"></i>
+				<i class="fa-regular fa-circle-pause" id="pause"></i>
+				<i class="fa-solid fa-forward-step"></i>
+				<i class="fa-solid fa-repeat"></i>
+			</div>
+			<div class="slider-body">
+				<span>1:39</span>
+				<input type="range" class="slider" min="0" max="100" value="33" id="song-slider">
+				<span>4:44</span>	
+			</div>
+		</div>
+
+		<div class="right-controls">
+			<i class="fa-solid fa-list"></i>
+			<i class="fa-solid fa-computer"></i>
+			<i class="fa-solid fa-volume-high"></i>
+			<input type="range" class="slider"  id="volume-slider" min="0" max="100" value="33">
+			<i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+			
+		</div>
+	</div>
+
+</body>
+ <!-- <script src="script.js"></script> -->
+</html>

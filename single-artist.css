@@ -1,0 +1,179 @@
+/*CSS for single-artist.html*/
+
+/*//default font-size of html*/
+/*//all other text is relative to rem*/
+html
+{
+	font-size: 18px;
+}
+
+
+/*below code to load main-content of webpage with  animationn*/
+.load-animation 
+{
+    transform: scale(0);
+    animation: emerge 0.5s forwards;
+}
+@keyframes emerge 
+{
+    to 
+    {
+        transform: scale(1);
+    }
+}
+
+/* top poster styling*/
+
+.poster
+{
+	width: 100%;
+	background-color: #101642;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom:0.8vw;
+}
+.poster>img 
+{
+	width: 35%;
+	filter: brightness(0.4);
+}
+.poster-info
+{
+	margin: 0 2% 0 3%;
+}
+
+.poster-heading
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.artist-name
+{
+/*	font-size: 2vw;*/
+	font-size: 1.42rem;
+    font-weight: 800;
+    color: white;
+}
+.followers
+{
+/*	font-size:1.1vw;*/
+	font-size: 0.78rem;
+	color:#ab9d9d;
+}
+.poster-content>p 
+{
+	margin: 2% 0;
+	color: #ab9d9d;
+/*	font-size: 1.1vw;*/
+	font-size: 0.78rem;
+}
+.poster-buttons
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 55%;
+	height: 4.5vw;
+}
+.btn-container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+	height: 100%;
+}
+.play-all-btn
+{
+	border: 0;
+	font-size: 1.1vw;
+	color:white;
+	height: 70%;
+	background: linear-gradient(45deg, #3b5998, #8b00ff);
+}
+.button-caption
+{
+	color:white;
+/*	font-size: 0.9vw;*/
+	font-size: 0.64rem;
+}
+.follow
+{
+	color:white;
+/*	font-size: 1.1vw;*/
+	font-size: 0.78rem;
+	font-weight: 300;
+}
+
+
+/*NOTE: below code is shifted to music-player-style.css*/
+/*stretched playlist styling*/
+
+/*overriding properties below suitable for this page playlist*/
+
+/*add below to elements with .queue-item to override new changes*/
+/*.queue-item_wider
+{
+	background-color: #1a1e33;
+}*/
+/*below with only target <img> and <i> under .wide-playlist element ie this page playlist*/
+/*.wide-playlist .queue-item>.info>img 
+{
+	width: 8%;
+}
+.wide-playlist .queue-item>i
+{
+	padding-right: 1.8vw;
+}*/
+/*add below to elment of class .playlist-queue to override new changes*/
+/*.playlist-queue_wider
+{
+	gap:0.5vw;
+}*/
+
+
+/*styling for sidebar*/
+
+.songs-playlist
+{
+	padding-left:1vw;
+	padding-right: 1vw;
+	display: flex;
+	flex-direction: column;
+	gap:4%;
+}
+
+
+/*styling for upper section of sidebar queues- SIMILAR ARTISTS/*
+/*makinngn new changes in playlist items*/
+//*/**overriding values from original  selectors of home page*/
+
+.song-image-container
+{
+	width: 25%;
+}
+.song-item
+{
+	width: 100%
+}
+.song-name
+{
+/*	font-size: 1.1vw;*/
+	font-size: 0.78rem;
+}
+.description
+{
+/*	font-size:1vw;*/
+	font-size: 0.71rem;
+}
+.song-duration i 
+{
+	font-size: 20px;
+}
+.time 
+{
+	font-size:1vw;
+	font-size: 0.71rem;
+}
